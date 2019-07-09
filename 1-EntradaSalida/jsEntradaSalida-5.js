@@ -5,7 +5,7 @@ function mostrar()
     var nombre;
     var edad;
 
-    nombre = document.getElementById("elNombre").value;
+    nombre = document.getElementById("elNombre").value; /*tomo datos por ID */
     edad = document.getElementById("laEdad").value;
     
     alert("Su nombre es " + nombre + " Y tiene " + edad + " años");
