@@ -1,9 +1,8 @@
 /*Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
-ej.: "la Resta es 750"*/ 
-function sumar()
-{	
+ej.: "la Resta es 750"*/
+function sumar() {
     var NumeroUno;
     var NumeroDos;
     var suma;
@@ -17,8 +16,7 @@ function sumar()
     alert("La suma es: " + suma);
 }
 
-function restar()
-{
+function restar() {
     var NumeroUno;
     var NumeroDos;
     var resta;
@@ -32,9 +30,8 @@ function restar()
     alert("La resta es: " + resta);
 }
 
-function multiplicar()
-{ 
-	var NumeroUno;
+function multiplicar() {
+    var NumeroUno;
     var NumeroDos;
     var multiplicar;
 
@@ -45,11 +42,10 @@ function multiplicar()
 
     var multiplicar = (NumeroUno * NumeroDos);
     alert("La multiplicacion es: " + multiplicar);
-} 
+}
 
-function dividir()
-{
-	var NumeroUno;
+function dividir() {
+    var NumeroUno;
     var NumeroDos;
     var dividir;
 

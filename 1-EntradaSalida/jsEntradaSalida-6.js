@@ -1,8 +1,7 @@
 /*Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt) y Sumarlos.
 mostrar el resulto por medio de "ALERT"*/
-function sumar()
-{
+function sumar() {
     var Numerouno;
     var Numerodos;
     var suma;
@@ -12,7 +11,7 @@ function sumar()
     Numerodos = document.getElementById("numeroDos").value;
     Numerodos = parseInt(Numerodos); /*Se convierte en numero*/
 
-    var suma =(Numerouno + Numerodos); /*Operacion*/
+    var suma = (Numerouno + Numerodos); /*Operacion*/
 
     alert("La suma es: " + suma);
 }
