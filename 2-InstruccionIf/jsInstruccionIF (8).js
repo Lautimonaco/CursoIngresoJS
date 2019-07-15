@@ -13,6 +13,8 @@ function mostrar()
    }
 }
 
-/* git clone (descargar proyecto) */
-/* git add. (subir proyecto) */
-
+/* git clone (descargar proyecto) 
+   git status 
+   git add .
+   git commit -m "comentario"
+   git push origin master (Subir proyecto)/*
