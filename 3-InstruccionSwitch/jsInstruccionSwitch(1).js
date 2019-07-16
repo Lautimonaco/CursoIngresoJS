@@ -2,7 +2,7 @@ function mostrar() {
     //tomo la edad  
     var mes = document.getElementById('mes').value;
 
-    switch (mes) {
+    switch(mes) {
         case "Enero":
             alert("que comiences bien el año!!!");
             break;
