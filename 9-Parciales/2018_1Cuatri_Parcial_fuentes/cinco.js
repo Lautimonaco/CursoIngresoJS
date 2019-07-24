@@ -4,32 +4,35 @@ function mostrar() {
     var mensaje;
 
 
-    sistemaSolar = prompt("Ingrese un planeta: ");
-    alert(sistemaSolar);
+    sistemaSolar = prompt("Ingrese un planeta");
 
-    switch(sistemaSolar) {
+    switch (sistemaSolar) {
+
         case "mercurio":
         case "venus":
-            mensaje =("acá hace mas calor");
+            mensaje = "Aca hace mas calor";
             break;
+
 
         case "tierra":
-            mensaje =("acá vivimos");
+            mensaje = "Aca vivimos";
             break;
 
+
+        case "marte":
         case "jupiter":
         case "saturno":
-        case "pluton":
         case "urano":
         case "neptuno":
-        case "marte":
-            mensaje =("acá hace más frio");
-            break;
+        case "pluton":
+            mensaje = "Aca hace mas frio";
+            break;  
 
-        default;
-            mensaje =("No es un planeta valido");
 
-            alert(mensaje);
+        default:
+            mensaje = "No es un planeta";
+
+
     }
-
+    alert(mensaje = mensaje);
 }
