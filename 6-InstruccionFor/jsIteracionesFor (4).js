@@ -1,7 +1,14 @@
-function mostrar()
-{
-    var repetir = prompt("ingrese el número de repeticiones");
+function mostrar() {
 
+    var repetir = prompt("Ingrese el número de repeticiones");
 
+    for (i = 0; ; i++) {
+        {
+            alert(+i);
+            if (i == repetir) {
+                break;
+            }
+        }
+    }
 
 }//FIN DE LA FUNCIÓN
