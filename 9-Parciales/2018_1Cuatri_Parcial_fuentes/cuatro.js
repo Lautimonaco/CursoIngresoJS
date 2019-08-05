@@ -5,21 +5,22 @@ function mostrar() {
     var suma;
 
 
-    if (numerouno == numerodos) {
+    if (numerouno == numerodos) {          // Si son iguales, los muestro concatenados
         alert(numerouno + numerodos);
     }
 
-    numerouno = parseInt(numerouno);  //paso los datos a numeros, para realizar operaciones.
+    numerouno = parseInt(numerouno);  //paso los datos a numeros, para realizar operaciones
     numerodos = parseInt(numerodos);
 
     if (numerouno > numerodos) {         // si el primero es mayor lo resto
         alert(numerouno - numerodos);
 
-    } else {                              
-        (numerouno + numerodos);      // de lo contrario lo sumo
-        alert(numerouno + numerodos);
-    } 
-      if (suma = prompt(alert(numerouno + numerodos > 10);
-        alert("la suma es " + suma + " y supero el 10");
-    
+    } else {
+        alert(numerouno + numerodos);      // de lo contrario lo sumo
+        suma = (numerouno + numerodos);
+    }
+
+    if (suma > 10) {
+        alert("La suma es " + suma + " y supero el 10");  // si supera los 10 muestro el mensaje
+    }
 }

@@ -1,14 +1,18 @@
-function mostrar() {
+function Mostrar() {
 
-    var repetir = prompt("ingresa el numero de repeticiones");
+    var numero = prompt("Ingrese un numero:");
+    numero = parseInt(numero);
 
-    for (i = 0; ; i++) {
-        {
-            alert(+i);
-            if (i == 9) {
-                break;
-            }
+    for (; num != 9;) {
+
+        while (isNaN(num)) {
+            numero = prompt("Ingrese un numero:");
+            numero = parseInt(num);
         }
-    }
 
-}//FIN DE LA FUNCIÓN
+        if (num == 9) {
+            break;
+        }
+
+    }
+}

@@ -1,10 +1,7 @@
 function mostrar() {
 
-    var sistemaSolar;
+    var sistemaSolar = prompt("Ingrese un planeta");
     var mensaje;
-
-
-    sistemaSolar = prompt("Ingrese un planeta");
 
     switch (sistemaSolar) {
 
@@ -26,13 +23,12 @@ function mostrar() {
         case "neptuno":
         case "pluton":
             mensaje = "Aca hace mas frio";
-            break;  
+            break;
 
 
         default:
             mensaje = "No es un planeta";
 
-
     }
-    alert(mensaje = mensaje);
+    alert(mensaje);
 }

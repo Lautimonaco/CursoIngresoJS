@@ -1,4 +1,5 @@
 function mostrar() {
+    
     var nota;
     var sexo;
     contador = 0;
@@ -6,7 +7,7 @@ function mostrar() {
     var acumulador = 0;
 
 
-    while (contador < 5) {
+    while (contador < 5) {   // notas y sexo de 5 alumnos
         contador++;
 
         nota = prompt("Ingrese la nota");

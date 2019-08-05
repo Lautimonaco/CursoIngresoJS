@@ -2,13 +2,13 @@ function mostrar() {
 
     var repetir = prompt("Ingrese el número de repeticiones");
 
-    for (i = 0; ; i++) {
+    for (i = 0;; i++) {
         {
             alert(+i);
             if (i == repetir) {
-                break;
+              break;
             }
         }
     }
 
-}//FIN DE LA FUNCIÓN
+}
