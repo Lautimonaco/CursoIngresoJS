@@ -47,5 +47,29 @@ function mostrar() {
             break;
     }
 
-    alert(mensaje);
+    alert(mensaje);  
+}
+
+
+/* funcion contador:     //el usuario elige si continuar
+  var seguir;
+  var numero;
+  var mayor;
+  var menor:
+  
+  do {
+      numero = parseint(prompt("Ingrese un numero"));
+
+  if (contador == 0) {
+      mayor = numero;          //Asigno mayor y menor
+      menor = numero;
+  }
+
+  if (numero > mayor) {
+      mayor = numero;          //Reemplazo si el numero es mayor.
+  }
+
+  if (numero < menor) {         
+      menor = numero;          //Reemplazo si el numero es menor.
+  }
 }

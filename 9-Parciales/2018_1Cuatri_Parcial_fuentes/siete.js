@@ -1,30 +1,45 @@
 function mostrar() {
-    
+
     var nota;
     var sexo;
-    contador = 0;
-    var contadorNota = 0;
-    var acumulador = 0;
+    var acumuladorNotas = 0;
+    var promedio;
+    var notaBaja;
+    var sexoBajo;
 
+    for (var i = 0; i < 5; i++) {
 
-    while (contador < 5) {   // notas y sexo de 5 alumnos
-        contador++;
-
-        nota = prompt("Ingrese la nota");
-        if (nota < 0 && nota > 10) {
-
-            prompt("Ingrese una nota entre 1 y 10");
+        nota = parseInt(prompt("Ingrese nota 0-10; "));
+        while (!(nota >= 0 && nota <= 10)) {      //Mientras no sea valida la nota, la pido otra vez
+            nota = parseInt(prompt("Error, reingrese la nota"));
         }
 
-        sexo = prompt("Ingrese el sexo");
-        if (sexo != "f" && sexo != "m") {
+        // ya tengo la nota validada
 
-            prompt("Ingrese un sexo correcto");
+        sexo = prompt("Ingrese sexo: ");             //Mientras no sea valido el sexo
+        while (!(sexo == "m" || sexo == "f" || sexo == "M" || sexo == "F")) { //valido tambien con mayusculas
+            sexo = prompt("Error, reingrese el sexo");
         }
+
     }
+    acumuladorNotas = acumuladorNotas + nota;    // acumula las notas que ingreso el usuario
+    //acumuladorNotas += numero;    
 
-    alert("El promedio de la nota es: " + nota / 100);
+    promedio = acumuladorNotas / 5;
+    alert("El promedio es: " + promedio);   //saco el promedio de las notas y lo muestro por alert
+
+    if (nota < notaBaja || i == 0) {
+        notaBaja = nota
+        sexoBajo = sexo
+    }   
+
+    alert("La nota mas baja es " + notaBaja + "Y el sexo: " + sexo);
+
 }
+
+
+
+
 /*
     if (contador = 00) {
         min = nota;
@@ -86,7 +101,5 @@ while {
 
 
     edad=prompt
-}
 
 */
-
