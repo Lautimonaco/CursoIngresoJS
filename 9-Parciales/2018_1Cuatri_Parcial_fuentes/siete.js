@@ -6,11 +6,13 @@ function mostrar() {
     var promedio;
     var notaBaja;
     var sexoBajo;
+    var contadorVaronesMayor = 0;
+    //var contador = 0;  lo pongo cuando no se cuantas veces va a pedir la nota.
 
     for (var i = 0; i < 5; i++) {
 
         nota = parseInt(prompt("Ingrese nota 0-10; "));
-        while (!(nota >= 0 && nota <= 10)) {      //Mientras no sea valida la nota, la pido otra vez
+        while (!(nota >= 0 && nota <= 10)) { //Otra forma: (nota < 0 || nota > 10 ||  isNaN(nota))
             nota = parseInt(prompt("Error, reingrese la nota"));
         }
 
@@ -22,22 +24,28 @@ function mostrar() {
         }
 
     }
+
     acumuladorNotas = acumuladorNotas + nota;    // acumula las notas que ingreso el usuario
     //acumuladorNotas += numero;    
 
-    promedio = acumuladorNotas / 5;
-    alert("El promedio es: " + promedio);   //saco el promedio de las notas y lo muestro por alert
-
     if (nota < notaBaja || i == 0) {
-        notaBaja = nota
-        sexoBajo = sexo
-    }   
+        notaBaja = nota;
+        sexoBajo = sexo;
+    }
 
-    alert("La nota mas baja es " + notaBaja + "Y el sexo: " + sexo);
+    if (sexo == "m" && nota >= 6) {    //Cantidad varones que la nota sea mayor
+        contadorVaronesMayor++;
+    }
 
+    notaBaja = nota;
+    sexoBajo = sexo;
+
+    promedio = acumuladorNotas / 5;     //alert("El promedio de la nota es: " + promedio / 5);
+    alert("Promedio: " + promedio);
+    alert("Nota Baja: " + notaBaja + " Sexo : " + sexoBajo);
+
+    alert("Cantidad de varones con notas mayores a 6: " + contadorVaronesMayor);
 }
-
-
 
 
 /*
