@@ -31,32 +31,32 @@ function mostrar() {
 
         acumuladortemperatura = acumuladortemperatura + temperatura;
 
-        if (temperatura % 2 == 0) {
+        if (temperatura % 2 == 0) {  //Cantidad temperaturas pares
             par++;
         }
 
-        if (peso > pesomax || flag == 0) {
+        if (peso > pesomax || flag == 0) {  //La marca del producto mas pesado
             pesomax = peso;
             marca++;
         }
 
-        if (peso < pesomin || flag == 0) {
-            pesomin = peso;
+        if (peso < pesomin || flag == 0) { 
+            pesomin = peso;                     //peso minimo
             flag = 1;
         }
 
-        if (temperatura < 0) {
+        if (temperatura < 0) {            //productos menos de 0 grados
             temperaturanegativa++;
         }
 
-        promediototal = peso / temperatura;
+        promediototal = peso / temperatura;  //promedio de los productos
 
     } while(seguir == "si");
 
     document.write("Las temperaturas pares son: " + par + "<br>");
-    document.write("La marca del producto mas pesado es " + pesomax + "<br>");
+    document.write("La marca del producto mas pesado es: " + marca + "<br>");
     document.write("Productos se conservan menos de 0: " + temperaturanegativa + "<br>");
-    document.write("El promedio de los pesos es" + promediototal + "<br>");
-    document.write("El peso maximo es: " + pesomax + "<br>" +  "Y el peso minimo es:" + pesomin + "<br>");
+    document.write("El promedio de los pesos es: " + promediototal + "<br>");
+    document.write("El peso maximo es: " + pesomax + "<br>" +  "Y el peso minimo es: " + pesomin + "<br>");
 
 }
