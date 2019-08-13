@@ -17,6 +17,7 @@ function mostrar() {
     var acumuladorpositivos = 0;
     var sumanegativos = 0;
     var negativos;
+    var cantidadnegativos = 0;
 
 
     do {
@@ -56,11 +57,11 @@ function mostrar() {
 
         if(numero > numeromaximo || bandera == 0){
             numeromaximo = numero;
-            letramaxima = letra
+            letramaxima = letra;
         }
         if(numero < numerominimo || bandera == 0){
             numerominimo = numero;
-            letraminima = letra
+            letraminima = letra;
             bandera = 1;
         }
         
