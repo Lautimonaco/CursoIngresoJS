@@ -72,4 +72,4 @@ function mostrar() {
   if (numero < menor) {         
       menor = numero;          //Reemplazo si el numero es menor.
   }
-}
+}*/
