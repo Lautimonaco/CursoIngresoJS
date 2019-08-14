@@ -1,19 +1,30 @@
-function mostrar()
-{
+function mostrar() {
 
-	var contador=0;
 	var numero;
-	
-	var respuesta='si';
+	var numeromaximo = 0;
+	var numerominimo = 0;
+	var seguir;
+	var bandera = 0;
 
-	while(respuesta!='no')
-	{
-		numero = parseInt(prompt("Ingrese un numero"));	
-		
-	
-	}
+	do {
 
+		numero = parseInt(prompt("Ingrese un numero: "));
+		while (isNaN(numero)) {
+			numero = parseInt(prompt("Error, reingrese un numero: "));
+		}
 
+		if (numeromaximo > numero || bandera == 0) {
+			numeromaximo = numero;
+		}
 
+		if (numerominimo < numero || bandera == 0) {
+			numerominimo = numero;
+			bandera = 1;
+		}
 
-}//FIN DE LA FUNCIÓN
+		seguir = prompt("Quiere continuar? si/no");
+	} while (seguir == "si");
+
+	document.getElementById('minimo').value = numeromaximo;
+	document.getElementById('maximo').value = numerominimo;
+}

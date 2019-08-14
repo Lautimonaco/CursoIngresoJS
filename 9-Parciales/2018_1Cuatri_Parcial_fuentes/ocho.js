@@ -6,7 +6,7 @@ function mostrar() {
     var cantidadpares = 0;
     var cantidadimpares = 0;
     var cantidadceros = 0;
-    var promediopositivos;
+    var promediopositivos = 0;
     var cantidadpositivos = 0;
     var bandera = 0;
     var numeromaximo = 0;
@@ -15,9 +15,7 @@ function mostrar() {
     var letraminima = 0;
     var acumuladornumero = 0;
     var acumuladorpositivos = 0;
-    var sumanegativos = 0;
-    var negativos;
-    var cantidadnegativos = 0;
+    var acumuladornegativos = 0;
 
 
     do {
@@ -28,72 +26,73 @@ function mostrar() {
             numero = parseInt(prompt("Error, reingrese un numero entre -100 y 100:"));
         }
 
-        seguir = prompt("Desea continuar si/no");
-
         if(numero % 2 == 0){
-            cantidadpares++;
+            cantidadpares++;   //cantidad numeros pares
         }else{
-            cantidadimpares++;
+            cantidadimpares++; //cantidad impares
         }
 
-        acumuladornumero = acumuladornumero + numero;
+        acumuladornumero = acumuladornumero + numero; 
 
         if(numero > 0){
-            acumuladorpositivos = acumuladorpositivos + numero; //cuento los positivos
+            acumuladorpositivos = acumuladorpositivos + numero; //sumo los positivos
             cantidadpositivos++;   //acumulo los positivos
-        }
-        if(numero < 0){
-            cantidadnegativos++;
-            negativos = numero;
+            promediopositivos = acumuladorpositivos / cantidadpositivos; //promedio
+        }else{
+            promediopositivos; //En caso de no ingresar positivos que no figure Isnan
         }
         
+        if(numero < 0){
+            acumuladornegativos = acumuladornegativos + numero; //sumo los negativos
+        } 
+        
         if(numero == 0){
-            cantidadceros++;
+            cantidadceros++;  //cuento los ceros
         }
 
-        promediopositivos = acumuladorpositivos / cantidadpositivos; //promedio positivos
-
-        sumanegativos = negativos + numero;
-
         if(numero > numeromaximo || bandera == 0){
-            numeromaximo = numero;
+            numeromaximo = numero;                   //Numero maximo
             letramaxima = letra;
         }
         if(numero < numerominimo || bandera == 0){
-            numerominimo = numero;
+            numerominimo = numero;                     //Numero minimo
             letraminima = letra;
             bandera = 1;
         }
+
+        seguir = prompt("Desea continuar si/no");   //le pregunto si desea continuar
         
-    } while (seguir == "si")
+    } while (seguir == "si")  //si la respuesta es 'Si' se ejecuta nuevamente
 
     document.write("La cantidad de numeros pares es: " + cantidadpares + "</br>");
     document.write("La cantidad de numeros impares es: " + cantidadimpares + "</br>");
     document.write("La cantidad de ceros es: " + cantidadceros + "</br>");
     document.write("El promedio de todos los numeros positivos es: " + promediopositivos + "</br>");
-    document.write("La suma de todos los numeros negativos es: " + sumanegativos + "</br>");
+    document.write("La suma de todos los numeros negativos es: " + acumuladornegativos + "</br>");
     document.write("El numero maximo es: " + numeromaximo + " Letra maxima: " + letramaxima +"</br>");
     document.write("La numero minimo es: " + numerominimo + " Letra minima: " + letraminima + "</br>");
 
 }
 
 
+/* Do - While (Se usa cuando el usuario elige cuando seguir)
+
+for (Cuando se cuantas veces se va repetir el bucle)
+
+while (Se pide una vez)
+
+bandera (se utiliza para minimo y maximo)
+
+*/
 
 
 
 
 
 
-   
 
-   
-   
-   
-   
-   
-   
-   
-   
+
+
    
    /*
     var letra;

@@ -1,23 +1,17 @@
 function mostrar() {
 
-    var numero = prompt("Ingrese un numero");
-    var pares = 0;
-    numero = parseInt(numero);
+    var numero;
+    var cantidadpares = 0;
 
-    for (i = 0; numero; i++) {   // i++ (aumenta de a uno) 
+    numero = parseInt(prompt("Ingrese un numero:"));
 
-        while (isNaN(ingreso)
-        
-            numero = prompt("Ingrese un numero");
-        numero = parseInt(ingreso);
+    for (var i = 0; i = numero; i++) {   // i++ (aumenta de a uno) 
+
+        if (i % 2 == 0) {
+            alert(i);
+            cantidadpares++;
+        }
     }
 
-    if (i % 2 == 0) {
-
-        alert(i);
-        pares++;
-    }
-
-    alert("Cantidad de numeros pares " + pares);
-
+    alert("Cantidad de numeros pares " + cantidadpares);
 }
