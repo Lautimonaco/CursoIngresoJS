@@ -1,16 +1,24 @@
 function mostrar() {
 
-    var numerouno = prompt("Ingrese el primer numero");
-    var numerodos = prompt("Ingrese el segundo numero");
+    var numerouno;
+    var numerodos;
     var suma;
+
+
+    numerouno = parseInt(prompt("Ingrese el primer numero: "));
+    while (isNaN(numerouno)) {
+        numerouno = parseInt(prompt("Error, reingrese el primer numero: "));
+    }
+
+    numerodos = parseInt(prompt("Ingrese el segundo numero: "));
+    while (isNaN(numerodos)) {
+        numerodos = parseInt(prompt("Error, reingrese el segundo numero: "));
+    }
 
 
     if (numerouno == numerodos) {          // Si son iguales, los muestro concatenados
         alert(numerouno + numerodos);
     }
-
-    numerouno = parseInt(numerouno);  //paso los datos a numeros, para realizar operaciones
-    numerodos = parseInt(numerodos);
 
     if (numerouno > numerodos) {         // si el primero es mayor lo resto
         alert(numerouno - numerodos);

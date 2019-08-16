@@ -127,41 +127,4 @@ alert("Nota Baja: " + notaBaja + " Sexo : " + sexoBajo);
 
 alert("Cantidad de varones con notas mayores a 6: " + contadorVaronesMayor);
 }
----------------------------------------------------------------------------------------
-
-
-if (contador = 00) {
-    min = nota;
-    max nota;
-
-} else {
-    if (nota < min) {
-
-        min = nota;
-    }
-    if (nota > max) {
-        max = nota;
-    }
-}
-}
-
-/* while (   ) {
-
-pido el numero
-if( contador == 0) {
-  min = numero;
-  max = numero:
-
-} else
-    {
-    if( numero < min)
-    {
-        min = numero;
-    }
-    if (numero > max)
-    {
-       max = numero;
-    }
-}
-}
 */
